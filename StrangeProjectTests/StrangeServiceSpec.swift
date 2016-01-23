@@ -16,7 +16,7 @@ class StrangeServiceSpec: QuickSpec {
             it("sums two numbers") {
                 let service = StrangeService()
                 let sum = service.sum(a: 3, b: 2)
-                expect(sum).to(equal(5))
+                expect(sum).to(equal(6))
             }
         }
     }

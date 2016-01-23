@@ -12,7 +12,12 @@
 		8E8EB16B1C53A4DD00302A09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E8EB1691C53A4DD00302A09 /* Main.storyboard */; };
 		8E8EB16D1C53A4DD00302A09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E8EB16C1C53A4DD00302A09 /* Assets.xcassets */; };
 		8E8EB1701C53A4DD00302A09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E8EB16E1C53A4DD00302A09 /* LaunchScreen.storyboard */; };
-		8E8EB17B1C53A4DD00302A09 /* StrangeProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8EB17A1C53A4DD00302A09 /* StrangeProjectTests.swift */; };
+		8E8EB17B1C53A4DD00302A09 /* StrangeServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8EB17A1C53A4DD00302A09 /* StrangeServiceSpec.swift */; };
+		8E8EB1861C53A54C00302A09 /* StrangeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8EB1851C53A54C00302A09 /* StrangeService.swift */; };
+		8E8EB18A1C53A62400302A09 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8EB1891C53A62400302A09 /* Nimble.framework */; };
+		8E8EB18C1C53A62D00302A09 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8EB18B1C53A62D00302A09 /* Quick.framework */; };
+		8E8EB18F1C53A6D400302A09 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8E8EB18B1C53A62D00302A09 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8E8EB1901C53A6D600302A09 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8E8EB1891C53A62400302A09 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +30,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		8E8EB18E1C53A6C800302A09 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8E8EB1901C53A6D600302A09 /* Nimble.framework in CopyFiles */,
+				8E8EB18F1C53A6D400302A09 /* Quick.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		8E8EB1621C53A4DD00302A09 /* StrangeProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StrangeProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E8EB1651C53A4DD00302A09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -34,8 +53,11 @@
 		8E8EB16F1C53A4DD00302A09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E8EB1711C53A4DD00302A09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E8EB1761C53A4DD00302A09 /* StrangeProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StrangeProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8E8EB17A1C53A4DD00302A09 /* StrangeProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrangeProjectTests.swift; sourceTree = "<group>"; };
+		8E8EB17A1C53A4DD00302A09 /* StrangeServiceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrangeServiceSpec.swift; sourceTree = "<group>"; };
 		8E8EB17C1C53A4DD00302A09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E8EB1851C53A54C00302A09 /* StrangeService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrangeService.swift; sourceTree = "<group>"; };
+		8E8EB1891C53A62400302A09 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		8E8EB18B1C53A62D00302A09 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +72,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E8EB18C1C53A62D00302A09 /* Quick.framework in Frameworks */,
+				8E8EB18A1C53A62400302A09 /* Nimble.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +83,7 @@
 		8E8EB1591C53A4DD00302A09 = {
 			isa = PBXGroup;
 			children = (
+				8E8EB18D1C53A63000302A09 /* Frameworks */,
 				8E8EB1641C53A4DD00302A09 /* StrangeProject */,
 				8E8EB1791C53A4DD00302A09 /* StrangeProjectTests */,
 				8E8EB1631C53A4DD00302A09 /* Products */,
@@ -83,6 +108,7 @@
 				8E8EB16C1C53A4DD00302A09 /* Assets.xcassets */,
 				8E8EB16E1C53A4DD00302A09 /* LaunchScreen.storyboard */,
 				8E8EB1711C53A4DD00302A09 /* Info.plist */,
+				8E8EB1851C53A54C00302A09 /* StrangeService.swift */,
 			);
 			path = StrangeProject;
 			sourceTree = "<group>";
@@ -90,10 +116,19 @@
 		8E8EB1791C53A4DD00302A09 /* StrangeProjectTests */ = {
 			isa = PBXGroup;
 			children = (
-				8E8EB17A1C53A4DD00302A09 /* StrangeProjectTests.swift */,
+				8E8EB17A1C53A4DD00302A09 /* StrangeServiceSpec.swift */,
 				8E8EB17C1C53A4DD00302A09 /* Info.plist */,
 			);
 			path = StrangeProjectTests;
+			sourceTree = "<group>";
+		};
+		8E8EB18D1C53A63000302A09 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8E8EB18B1C53A62D00302A09 /* Quick.framework */,
+				8E8EB1891C53A62400302A09 /* Nimble.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +158,7 @@
 				8E8EB1721C53A4DD00302A09 /* Sources */,
 				8E8EB1731C53A4DD00302A09 /* Frameworks */,
 				8E8EB1741C53A4DD00302A09 /* Resources */,
+				8E8EB18E1C53A6C800302A09 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -197,6 +233,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E8EB1861C53A54C00302A09 /* StrangeService.swift in Sources */,
 				8E8EB1681C53A4DD00302A09 /* ViewController.swift in Sources */,
 				8E8EB1661C53A4DD00302A09 /* AppDelegate.swift in Sources */,
 			);
@@ -206,7 +243,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E8EB17B1C53A4DD00302A09 /* StrangeProjectTests.swift in Sources */,
+				8E8EB17B1C53A4DD00302A09 /* StrangeServiceSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,6 +386,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = StrangeProjectTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gearaffo.StrangeProjectTests;
@@ -361,6 +402,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = StrangeProjectTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gearaffo.StrangeProjectTests;
